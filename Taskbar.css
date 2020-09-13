@@ -1,0 +1,41 @@
+body{
+margin: 0;
+padding: 0;
+background: #f1f1f1;
+margin-top: 360px;
+}
+.Taskbar{
+  margin: 0;
+  padding: 0;
+}
+.Taskbar li{
+  list-style: none;
+  display: inline-block;
+  border: solid 3px #1abc9c;
+  margin-left: 10px;
+}
+.Taskbar li a{
+  text-decoration: none;
+  position: relative;
+  color: #313131;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: block;
+  transition: 0.7s all;
+  padding: 14px 30px;
+  text-transform: uppercase;
+}
+ .Taskbar li a:before{
+   content: "";
+   width: 60px;
+   position: absolute;
+   border-bottom: 8px solid #1abc9c ;
+   bottom: 0;
+   right: 360px;
+   transition: 0.5s all;
+ }
+.Taskbar li :hover::before{
+  right: 0;
+}
